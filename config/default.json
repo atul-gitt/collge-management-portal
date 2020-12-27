@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://atul:atul321@cluster0.py2zo.mongodb.net/collegemanagementportal?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://atul:atul321@cluster0.py2zo.mongodb.net/collegemanagementportal?retryWrites=true&w=majority",
+  "jwtSecret": "collegemanagementportal"
 }

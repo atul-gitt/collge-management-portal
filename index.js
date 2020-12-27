@@ -4,7 +4,9 @@ const connectDB = require('./config/db');
 const app = express();
 //connect database
 connectDB();
-app.get('/', (req, res) => res.send('API Running'));
+
+//Init Middleware
+app.use(express.json({ extended: true }));
 
 //Define Routes
 app.use('/api/students', require('./routes/api/students'));
