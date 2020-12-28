@@ -11,7 +11,8 @@ app.use(express.json({ extended: true }));
 //Define Routes
 app.use('/api/students', require('./routes/api/students'));
 app.use('/api/teachers', require('./routes/api/teachers'));
-app.use('/api/auth', require('./routes/api/auth'));
+app.use('/api/auth_teacher', require('./routes/api/authTeacher'));
+app.use('/api/auth_student', require('./routes/api/authStudent'));
 app.use('/api/profile', require('./routes/api/profile'));
 app.use('/api/assignment', require('./routes/api/assignment'));
 app.use('/api/courses', require('./routes/api/courses'));
